@@ -15,11 +15,11 @@
  x>0 and  80>x and                 dd>:array.get(o,z
  ), do: (z = :array.             set(o,dd,z);p=if nn
   >0,do: nn, else: 0;b         =:array.set(o, Enum.
-   at('.,-~:;=!*#$@',p),b);{z,b}), else: {z,b}; b=
-   Enum.reduce(0..1759//80,b,fn ix,b ->:array.set(
-     ix,10,b)end); {z, b} end); IO.puts('\x1b[H'
-      ++:array.to_list(b)); {0,{q+0.04,w+0.02}}
-        #    https://github.com/Virviil     #
-          #    https://t.me/proelixir     #
-             #  f@ck war, let's code!  #
-                 end) |>Stream.run()
+   at('.,-~:;=!*#$@',p),b);{z,b}), else: {z,b}; {z,
+    b} end); p = Enum.reduce(0..21, b, fn k, i ->
+     :array.set(k*80,10,i)end); IO.puts('\x1b[H'
+      ++:array.to_list(p)); Process.sleep(50);
+       {0,{q+0.04,w+0.02}}end)|>Stream.run()
+         #  https://github.com/Virviil  #
+           #  https://t.me/proelixir   #
+             # f@ck war, let's code! #
